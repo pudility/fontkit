@@ -1,7 +1,8 @@
 {
-  "name": "fontkit",
+  "name": "@types/fontkit",
   "version": "1.7.7",
   "description": "An advanced font engine for Node and the browser",
+  "typings": "./fontkit.d.ts",
   "keywords": [
     "opentype",
     "font",
