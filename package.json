@@ -1,37 +1,39 @@
 {
-  "name": "fontkit",
-  "version": "1.7.7",
-  "description": "An advanced font engine for Node and the browser",
-  "typings": "fontkit.d.ts",
-  "keywords": [
-    "opentype",
-    "font",
-    "typography",
-    "subset",
-    "emoji",
-    "glyph",
-    "layout"
-  ],
-  "scripts": {
-    "test": "mocha",
-    "prepublish": "make",
-    "coverage": "BABEL_ENV=cover nyc mocha"
+  "_from": "fontkit",
+  "_id": "fontkit@1.7.7",
+  "_inBundle": false,
+  "_integrity": "sha1-668tjz/t8wKuPGS0vurdwkf827E=",
+  "_location": "/fontkit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "fontkit",
+    "name": "fontkit",
+    "escapedName": "fontkit",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "main": "index.js",
-  "jsnext:main": "src/index.js",
-  "files": [
-    "fontkit.d.ts",
-    "src",
-    "base.js",
-    "base.js.map",
-    "index.js",
-    "index.js.map",
-    "data.trie",
-    "use.trie",
-    "indic.trie"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "author": "Devon Govett <devongovett@gmail.com>",
-  "license": "MIT",
+  "_resolved": "https://registry.npmjs.org/fontkit/-/fontkit-1.7.7.tgz",
+  "_shasum": "ebaf2d8f3fedf302ae3c64b4beeaddc247fcdbb1",
+  "_spec": "fontkit",
+  "_where": "/Users/zoe/Developer/tmp/video-stream-sample",
+  "author": {
+    "name": "Devon Govett",
+    "email": "devongovett@gmail.com"
+  },
+  "browserify": {
+    "transform": [
+      "brfs",
+      "browserify-optional"
+    ]
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "babel-runtime": "^6.11.6",
     "brfs": "^1.4.0",
@@ -45,6 +47,8 @@
     "unicode-properties": "^1.0.0",
     "unicode-trie": "^0.3.0"
   },
+  "deprecated": false,
+  "description": "An advanced font engine for Node and the browser",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-plugin-istanbul": "^4.1.3",
@@ -65,10 +69,33 @@
     "rollup-plugin-json": "^2.0.2",
     "rollup-plugin-local-resolve": "^1.0.7"
   },
-  "browserify": {
-    "transform": [
-      "brfs",
-      "browserify-optional"
-    ]
-  }
+  "files": [
+    "src",
+    "base.js",
+    "base.js.map",
+    "index.js",
+    "index.js.map",
+    "data.trie",
+    "use.trie",
+    "indic.trie"
+  ],
+  "jsnext:main": "src/index.js",
+  "keywords": [
+    "opentype",
+    "font",
+    "typography",
+    "subset",
+    "emoji",
+    "glyph",
+    "layout"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "fontkit",
+  "scripts": {
+    "coverage": "BABEL_ENV=cover nyc mocha",
+    "prepublish": "make",
+    "test": "mocha"
+  },
+  "version": "1.7.7"
 }
