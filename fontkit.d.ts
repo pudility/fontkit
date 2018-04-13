@@ -2,7 +2,7 @@
 // Project: https://github.com/devongovett/fontkit
 // Definitions by: John Hewson <https://github.com/jahewson>
 
-/// <reference path="../node/node.d.ts" />
+// / <reference path="../node/node.d.ts" />
 
 declare module 'fontkit' {
   function open(filename: string, callback?: (err: any, font: Font) => void): void;
@@ -58,7 +58,7 @@ declare module 'fontkit' {
     // Glyph metrics and layout
     widthOfGlyph(glyphId: GID): number; // todo: this method does not seem to exist?
     layout(string: string, features?: Array<string>): GlyphRun;
-    
+
     // Variation fonts - todo: given that this is a AAT feature, can this be moved to a subclass?
     variationAxes: { [axisTag: string]: VariationAxis };
     namedVariations: { [name: string]: VariationSettings };
@@ -102,7 +102,7 @@ declare module 'fontkit' {
     //fdForGlyph(gid);
     //privateDictForGlyph(gid);
   }
-  
+
   interface VariationAxis {
     name: string;
     min: number;
@@ -135,7 +135,6 @@ declare module 'fontkit' {
     bbox: BBox;
     cbox: BBox;
     advanceWidth: number;
-    render(ctx: CanvasRenderingContext2D, size: number): void;
   }
 
   class COLRGlyph extends Glyph {
