@@ -2,7 +2,7 @@
   "name": "fontkit",
   "version": "1.7.7",
   "description": "An advanced font engine for Node and the browser",
-  "typings": "./fontkit.d.ts",
+  "typings": "fontkit.d.ts",
   "keywords": [
     "opentype",
     "font",
@@ -20,6 +20,7 @@
   "main": "index.js",
   "jsnext:main": "src/index.js",
   "files": [
+    "fontkit.d.ts",
     "src",
     "base.js",
     "base.js.map",
